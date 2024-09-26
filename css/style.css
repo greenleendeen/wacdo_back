@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    --primary: orange;
+    --secondary:#323232;
+    --Tertiary: red;
+    --Background:#F8F8F8;
+}
+.margin {
+  margin:10px;
+}
+.padding {
+  padding: 30px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spaceBetwen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spaceAround {
+    display: flex;
+    justify-content: space-around;
+}
+
+a, a :visited {
+    color: var(--Background);
+    text-decoration: none;
+} 
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px 10px;
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif  ;
+    color: var(--secondary);
+  }
+  th {
+    background-color: #b3e383;
+  }
+
+  .pseudoNav {
+    width:100%;
+    background-color: bisque;
+  }
+.button{
+border: 0;
+padding: 7px;
+font-size: 1rem;
+display: flex;
+justify-content: space-around;
+text-align: center;
+color: #111111; 
+border: solid 2px var(--primary);
+/*background-color: var(--primary);*/
+border-radius: 10px;
+gap: 3%;
+margin: 2%;
+
+}
+
+.menu {
+    width: 200px;
+    height: 800px;
+    background-color: grey;
+    
+}
+.logo {
+    width: 100%;
+}
+
+table {
+    width: 90%;
+    background-color:var(--Background);
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--Background);
+   
+}
+.circleRed {
+    width: 24px;
+    height: 24px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.circleGreen {
+    width: 24px;
+    height: 24px;
+    background-color: green;
+    border-radius: 50%;   
+}
+
+.grey {
+background-color: var(--secondary);
+}
+
+/*conteiner + item*/ 
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+    background-color:beige;
+  }
+  
+  .item {
+   width: 40%;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+
+  /* la carte du produit à afficher*/
+  .cartProd {
+    margin: 20px;
+    padding: 10px 25px ;
+    border: 1px solid grey;
+    border-radius: 7%;
+    width: 500px;
+    height: 500px;
+    background-color: var(--Background);
+  }
+
+  .cartProd >div {
+    margin-top: 7px;
+    padding: 5%;
+  }
+
+  /* pour la page prepa com : grande boite avec 2 divs dedans*/
+  .block {
+   margin: 3%;
+
+    flex-direction: row;
+   
+    align-items: normal;
+    align-content: normal;
+  }
+  
+  .div45 {
+    display: block;
+    width: 45%;
+    height: 500px; /*modifier plus tard*/
+    border: solid 1px gray;
+    padding: 1.5%;
+  }
+  
+  /*les boutons quantité*/
+  .quantityContainer{
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  .quantityButton {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.quantityButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+span {
+  width: 3rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+#quantityDisplay {
+    font-size: 20px;
+    font-weight: bold;
+    width: 20px;
+    text-align: center;
+}
